@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/activity_main"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context="com.cesiztel.dutax.MainActivity">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary">
+
+            <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/annual_gross_income_label"
+              android:textColor="@android:color/white"
+              android:textSize="22sp"
+              android:padding="16dp"
+              android:textAlignment="textEnd"/>
+
+            <EditText
+              android:id="@+id/annual_gross_income_text_view"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textColor="@android:color/white"
+              android:textSize="52sp"
+              android:hint="@string/annual_gross_income_default_value"
+              android:textAlignment="textEnd"
+              android:padding="16sp"
+              android:inputType="numberDecimal"
+              android:textColorHint="@android:color/white"
+              android:background="@android:color/transparent"/>
+
+            <View
+              android:layout_width="match_parent"
+              android:layout_height="5dp"
+              android:background="@color/colorAccent"/>
+
+          </LinearLayout>
+
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+              <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_header_label"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:textAlignment="textStart"/>
+
+              <CheckBox
+                android:id="@+id/holiday_allowance_check_box"
+                android:text="@string/holiday_allowance_included_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="4dp"/>
+
+              <CheckBox
+                android:id="@+id/social_security_check_box"
+                android:text="@string/social_security_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="4dp"/>
+
+              <LinearLayout
+                android:id="@+id/thirty_percent_ruling_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                  android:id="@+id/thirty_percent_ruling_check_box"
+                  android:text="@string/i_have_30_ruling_label"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:padding="8dp"
+                  android:layout_marginTop="4dp"
+                  android:layout_marginLeft="8dp"
+                  android:layout_marginRight="8dp"
+                  android:layout_marginBottom="4dp"
+                  android:layout_weight="1"
+                  />
+
+                <ImageView
+                  android:id="@+id/thirty_percent_ruling_help_image_view"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/ic_help_outline_grey_24dp"
+                  android:layout_marginEnd="16dp"
+                  android:layout_marginStart="16dp"
+                  android:layout_marginTop="8dp"
+                  android:layout_marginBottom="8dp"/>
+              </LinearLayout>
+
+
+          </LinearLayout>
+
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+              <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Results"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:textAlignment="textStart"/>
+
+              <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/taxable_income_label"
+                  android:layout_weight="1"
+                  android:textSize="16sp"
+                  android:padding="16dp"
+                  android:textAlignment="textStart"/>
+
+                <TextView
+                  android:id="@+id/taxable_income_text_view"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/taxable_income_default_value"
+                  android:textStyle="bold"
+                  android:textColor="@android:color/black"
+                  android:layout_weight="1"
+                  android:textSize="16sp"
+                  android:padding="16dp"
+                  android:textAlignment="textEnd"/>
+
+              </LinearLayout>
+
+            <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+              <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/income_tax_label"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:textAlignment="textStart"/>
+
+              <TextView
+                android:id="@+id/income_tax_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/income_tax_default_value"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:textAlignment="textEnd"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+              <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/general_tax_credit_label"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:textAlignment="textStart"/>
+
+              <TextView
+                android:id="@+id/general_tax_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/general_tax_default_value"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:textAlignment="textEnd"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+              <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/labour_tax_credit_label"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:textAlignment="textStart"/>
+
+              <TextView
+                android:id="@+id/labour_tax_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/labour_tax_default_value"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:textAlignment="textEnd"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+              <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/year_net_income_label"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:textAlignment="textStart"/>
+
+              <TextView
+                android:id="@+id/year_net_income_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/year_net_income_default_value"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:textAlignment="textEnd"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+              <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/monthly_net_income_label"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:textAlignment="textStart"/>
+
+              <TextView
+                android:id="@+id/monthly_net_income_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/monthly_net_income_default_value"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:textAlignment="textEnd"/>
+
+            </LinearLayout>
+
+          </LinearLayout>
+
+      </LinearLayout>
+
+</ScrollView>

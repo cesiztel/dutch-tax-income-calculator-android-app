@@ -1,0 +1,32 @@
+<resources>
+  <string name="app_name">Dutax</string>
+  <string name="annual_gross_income_label">Annual gross income</string>
+  <string name="annual_gross_income_default_value">0</string>
+  <string name="settings_header_label">Settings</string>
+  <string name="holiday_allowance_included_label">Holiday allowance included</string>
+  <string name="social_security_label">Social security</string>
+  <string name="i_have_30_ruling_label">I have 30% ruling</string>
+  <string name="taxable_income_label">Taxable Income</string>
+  <string name="taxable_income_default_value">0</string>
+  <string name="income_tax_label">Income Tax</string>
+  <string name="income_tax_default_value">0</string>
+  <string name="general_tax_credit_label">General Tax Credit</string>
+  <string name="general_tax_default_value">0</string>
+  <string name="labour_tax_credit_label">Labour Tax Credit</string>
+  <string name="labour_tax_default_value">0</string>
+  <string name="year_net_income_label">Year net income</string>
+  <string name="year_net_income_default_value">0</string>
+  <string name="monthly_net_income_label">Monthly net income</string>
+  <string name="monthly_net_income_default_value">0</string>
+    <string name="about_ruling_alert_title">About 30% Ruling</string>
+    <string name="ok">OK</string>
+    <string name="about_ruling_alert_message"><![CDATA[
+        <p>The salary criteria for the <b>30%-ruling</b> as per January 2017 are as follows:</p>
+        <ol>
+            <li>The annual taxable salary for an employee must be more than <b>EUR 37,000</b> (2015: 36,889).</li>
+            <li>The taxable salary for an employee with a master’s degree and who is younger than 30 years,
+            must be more than <b>EUR 28,125</b> (2015: EUR 28,041).</li>
+        </ol>]]>
+    </string>
+    <string name="tax_calculation_year">2017</string>
+</resources>
